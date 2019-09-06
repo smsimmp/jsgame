@@ -5,7 +5,7 @@
 <body>
 	<button onclick="startGame()">New</button>
 	<div id="score">0</div>
-	<canvas id="paper" width="400" height="400">
+	<canvas id="paper" width="600" height="600">
 	</canvas>
 </body>
 	<script type="text/javascript">		
@@ -78,7 +78,7 @@
 		        for(var i = 0; i < enemies.length; i++){
 		        	context.beginPath();
 			        context.arc(enemies[i].x, enemies[i].y, enemies[i].radius, 0, 2 * Math.PI, false);
-			        context.fillStyle = 'blue';
+			        context.fillStyle = 'black';
 			        context.fill();
 		        }
 		      
